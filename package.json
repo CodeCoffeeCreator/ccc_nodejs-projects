@@ -1,0 +1,31 @@
+{
+  "name": "weather-app-cli",
+  "version": "1.0.0",
+  "description": "get weather from API",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather",
+    "api",
+    "app"
+  ],
+  "author": "Denny Pearce",
+  "license": "ISC",
+  "homepage": "https://codecoffeecreator.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeCoffeeCreator"
+  },
+  "bugs": {
+    "url": "https://codecoffeecreator.netlify.app/",
+    "email": "barneyystark@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
