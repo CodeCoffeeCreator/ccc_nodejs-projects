@@ -44,3 +44,4 @@ BaseController = __decorate([
     __metadata("design:paramtypes", [Object])
 ], BaseController);
 exports.BaseController = BaseController;
+//# sourceMappingURL=base.controller.js.map
