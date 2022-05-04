@@ -24,12 +24,12 @@ let ExeptionFilter = class ExeptionFilter {
     catch(err, req, res, next) {
         if (err instanceof http_error_class_1.HTTPError) {
             this.logger.error(`[${err.context}] Error ${err.statusCode}: ${err.message}`);
-            return res.status(err.statusCode).send({ err: err.message });
+            res.status(err.statusCode).send({ err: err.message });
         }
         else {
             this.logger.error(`${err.message}`);
+            res.status(500).send({ err: err.message });
         }
-        return res.status(500).send({ err: err.message });
     }
 };
 ExeptionFilter = __decorate([
